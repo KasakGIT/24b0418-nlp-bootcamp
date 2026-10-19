@@ -1,0 +1,24 @@
+{
+  "bm25_val_ndcg10": 0.7980328294958409,
+  "minilm_val_ndcg10": 0.815549269126426,
+  "rrf_k_candidates": [
+    20,
+    40,
+    60,
+    100
+  ],
+  "best_rrf_k": 20,
+  "hybrid_val_ndcg10": 0.8418078795353534,
+  "best_first_stage": "hybrid",
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "rerank_k_candidates": [
+    20,
+    50,
+    100
+  ],
+  "best_rerank_k": 20,
+  "rerank_val_ndcg10": 0.8644928048569195,
+  "rerank_val_latency_ms": 2872.381331209863,
+  "rerank_eval_latency_ms": 2270.7064563966683,
+  "dense_encoding_time_sec": 377.68763311800285
+}

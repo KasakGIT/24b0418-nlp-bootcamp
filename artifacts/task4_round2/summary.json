@@ -1,0 +1,53 @@
+{
+  "seed": 42,
+  "configs": [
+    {
+      "config_id": 1,
+      "lr": 5e-06,
+      "epochs": 1,
+      "batch": 16,
+      "num_neg": 4,
+      "val_ndcg10": 0.8245361913758046,
+      "train_seconds": 666.933114528656
+    },
+    {
+      "config_id": 2,
+      "lr": 1e-05,
+      "epochs": 1,
+      "batch": 16,
+      "num_neg": 4,
+      "val_ndcg10": 0.821248605546341,
+      "train_seconds": 970.9023370742798
+    },
+    {
+      "config_id": 3,
+      "lr": 5e-06,
+      "epochs": 2,
+      "batch": 16,
+      "num_neg": 4,
+      "val_ndcg10": 0.8276622677970497,
+      "train_seconds": 62692.13648247719
+    },
+    {
+      "config_id": 4,
+      "lr": 1e-05,
+      "epochs": 1,
+      "batch": 8,
+      "num_neg": 4,
+      "val_ndcg10": 0.8270779077337831,
+      "train_seconds": 830.6389648914337
+    }
+  ],
+  "best": {
+    "config_id": 3,
+    "lr": 5e-06,
+    "epochs": 2,
+    "batch": 16,
+    "num_neg": 4,
+    "val_ndcg10": 0.8276622677970497,
+    "train_seconds": 62692.13648247719,
+    "model_dir": "/home/kasak/Downloads/NLP/artifacts/task4_round2/best_model"
+  },
+  "original_task4_hard_val_ndcg10": 0.8327,
+  "replaced_required_t4_hard": false
+}

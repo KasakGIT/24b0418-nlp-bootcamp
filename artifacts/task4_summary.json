@@ -1,0 +1,132 @@
+{
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "seed": 42,
+  "batch_size": 16,
+  "triplet_margin": 0.5,
+  "learning_rates": [
+    1e-05,
+    2e-05
+  ],
+  "epochs_tested": [
+    1,
+    2
+  ],
+  "num_random_negatives": 2,
+  "num_hard_negatives": 2,
+  "hard_negative_source": [
+    "Task 2 MiniLM retrieval"
+  ],
+  "all_results": [
+    {
+      "variant": "random",
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "batch_size": 16,
+      "triplet_margin": 0.5,
+      "train_triplets": 880,
+      "validation_ndcg10": 0.8317143948784802,
+      "training_time_seconds": 537.7343940734863,
+      "model_dir": "artifacts/task4_tuning/random_lr1e-05_epochs1"
+    },
+    {
+      "variant": "random",
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "batch_size": 16,
+      "triplet_margin": 0.5,
+      "train_triplets": 880,
+      "validation_ndcg10": 0.8278972032109235,
+      "training_time_seconds": 1144.5492310523987,
+      "model_dir": "artifacts/task4_tuning/random_lr1e-05_epochs2"
+    },
+    {
+      "variant": "random",
+      "learning_rate": 2e-05,
+      "epochs": 1,
+      "batch_size": 16,
+      "triplet_margin": 0.5,
+      "train_triplets": 880,
+      "validation_ndcg10": 0.8220207201413104,
+      "training_time_seconds": 636.1430032253265,
+      "model_dir": "artifacts/task4_tuning/random_lr2e-05_epochs1"
+    },
+    {
+      "variant": "random",
+      "learning_rate": 2e-05,
+      "epochs": 2,
+      "batch_size": 16,
+      "triplet_margin": 0.5,
+      "train_triplets": 880,
+      "validation_ndcg10": 0.8175671776874159,
+      "training_time_seconds": 1172.4665803909302,
+      "model_dir": "artifacts/task4_tuning/random_lr2e-05_epochs2"
+    },
+    {
+      "variant": "hard",
+      "learning_rate": 1e-05,
+      "epochs": 1,
+      "batch_size": 16,
+      "triplet_margin": 0.5,
+      "train_triplets": 880,
+      "validation_ndcg10": 0.83271434932859,
+      "training_time_seconds": 518.5490095615387,
+      "model_dir": "artifacts/task4_tuning/hard_lr1e-05_epochs1"
+    },
+    {
+      "variant": "hard",
+      "learning_rate": 1e-05,
+      "epochs": 2,
+      "batch_size": 16,
+      "triplet_margin": 0.5,
+      "train_triplets": 880,
+      "validation_ndcg10": 0.8073645030403045,
+      "training_time_seconds": 955.4310729503632,
+      "model_dir": "artifacts/task4_tuning/hard_lr1e-05_epochs2"
+    },
+    {
+      "variant": "hard",
+      "learning_rate": 2e-05,
+      "epochs": 1,
+      "batch_size": 16,
+      "triplet_margin": 0.5,
+      "train_triplets": 880,
+      "validation_ndcg10": 0.7991933773525776,
+      "training_time_seconds": 454.55691719055176,
+      "model_dir": "artifacts/task4_tuning/hard_lr2e-05_epochs1"
+    },
+    {
+      "variant": "hard",
+      "learning_rate": 2e-05,
+      "epochs": 2,
+      "batch_size": 16,
+      "triplet_margin": 0.5,
+      "train_triplets": 880,
+      "validation_ndcg10": 0.7655872515212938,
+      "training_time_seconds": 899.2057259082794,
+      "model_dir": "artifacts/task4_tuning/hard_lr2e-05_epochs2"
+    }
+  ],
+  "best_random": {
+    "variant": "random",
+    "learning_rate": 1e-05,
+    "epochs": 1,
+    "batch_size": 16,
+    "triplet_margin": 0.5,
+    "train_triplets": 880,
+    "validation_ndcg10": 0.8317143948784802,
+    "training_time_seconds": 537.7343940734863,
+    "model_dir": "artifacts/task4_tuning/random_lr1e-05_epochs1"
+  },
+  "best_hard": {
+    "variant": "hard",
+    "learning_rate": 1e-05,
+    "epochs": 1,
+    "batch_size": 16,
+    "triplet_margin": 0.5,
+    "train_triplets": 880,
+    "validation_ndcg10": 0.83271434932859,
+    "training_time_seconds": 518.5490095615387,
+    "model_dir": "artifacts/task4_tuning/hard_lr1e-05_epochs1"
+  },
+  "winner": "hard"
+}

@@ -1,0 +1,9 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "bm25_top": 50,
+  "dense_top": 50,
+  "num_negatives": 4,
+  "train_claims_with_evidence": 399,
+  "usable_examples": 399,
+  "avg_bm25_dense_overlap": 12.734335839598998
+}

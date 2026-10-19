@@ -1,0 +1,135 @@
+{
+  "baseline_task3_rerank_ndcg10": 0.8645,
+  "best_rrf_k": 15,
+  "best_rrf_ndcg10": 0.8402152658473301,
+  "best_round2": {
+    "candidate_pool": "union_100",
+    "union_depth": 100,
+    "rerank_depth": 10,
+    "rrf_k": 15,
+    "ndcg10": 0.8675735739767122,
+    "latency_ms_per_query": 15713.192019586422
+  },
+  "all_round2_results": [
+    {
+      "candidate_pool": "union_50",
+      "union_depth": 50,
+      "rerank_depth": 10,
+      "rrf_k": 15,
+      "ndcg10": 0.8635105875797935,
+      "latency_ms_per_query": 16625.78611633951
+    },
+    {
+      "candidate_pool": "union_50",
+      "union_depth": 50,
+      "rerank_depth": 15,
+      "rrf_k": 15,
+      "ndcg10": 0.8635105875797935,
+      "latency_ms_per_query": 14824.524278913588
+    },
+    {
+      "candidate_pool": "union_50",
+      "union_depth": 50,
+      "rerank_depth": 20,
+      "rrf_k": 15,
+      "ndcg10": 0.8635105875797935,
+      "latency_ms_per_query": 10399.210468234585
+    },
+    {
+      "candidate_pool": "union_50",
+      "union_depth": 50,
+      "rerank_depth": 30,
+      "rrf_k": 15,
+      "ndcg10": 0.8635105875797935,
+      "latency_ms_per_query": 8017.950521104927
+    },
+    {
+      "candidate_pool": "union_50",
+      "union_depth": 50,
+      "rerank_depth": 40,
+      "rrf_k": 15,
+      "ndcg10": 0.8635105875797935,
+      "latency_ms_per_query": 8023.587445975302
+    },
+    {
+      "candidate_pool": "union_100",
+      "union_depth": 100,
+      "rerank_depth": 10,
+      "rrf_k": 15,
+      "ndcg10": 0.8675735739767122,
+      "latency_ms_per_query": 15713.192019586422
+    },
+    {
+      "candidate_pool": "union_100",
+      "union_depth": 100,
+      "rerank_depth": 15,
+      "rrf_k": 15,
+      "ndcg10": 0.8675735739767122,
+      "latency_ms_per_query": 15685.082576938288
+    },
+    {
+      "candidate_pool": "union_100",
+      "union_depth": 100,
+      "rerank_depth": 20,
+      "rrf_k": 15,
+      "ndcg10": 0.8675735739767122,
+      "latency_ms_per_query": 15671.650278938276
+    },
+    {
+      "candidate_pool": "union_100",
+      "union_depth": 100,
+      "rerank_depth": 30,
+      "rrf_k": 15,
+      "ndcg10": 0.8675735739767122,
+      "latency_ms_per_query": 15646.093085543198
+    },
+    {
+      "candidate_pool": "union_100",
+      "union_depth": 100,
+      "rerank_depth": 40,
+      "rrf_k": 15,
+      "ndcg10": 0.8675735739767122,
+      "latency_ms_per_query": 15636.386542209904
+    },
+    {
+      "candidate_pool": "union_200",
+      "union_depth": 200,
+      "rerank_depth": 10,
+      "rrf_k": 15,
+      "ndcg10": 0.8675735739767122,
+      "latency_ms_per_query": 15600.961514450633
+    },
+    {
+      "candidate_pool": "union_200",
+      "union_depth": 200,
+      "rerank_depth": 15,
+      "rrf_k": 15,
+      "ndcg10": 0.8675735739767122,
+      "latency_ms_per_query": 15615.122048388856
+    },
+    {
+      "candidate_pool": "union_200",
+      "union_depth": 200,
+      "rerank_depth": 20,
+      "rrf_k": 15,
+      "ndcg10": 0.8675735739767122,
+      "latency_ms_per_query": 16025.449146617273
+    },
+    {
+      "candidate_pool": "union_200",
+      "union_depth": 200,
+      "rerank_depth": 30,
+      "rrf_k": 15,
+      "ndcg10": 0.8675735739767122,
+      "latency_ms_per_query": 15926.270389697527
+    },
+    {
+      "candidate_pool": "union_200",
+      "union_depth": 200,
+      "rerank_depth": 40,
+      "rrf_k": 15,
+      "ndcg10": 0.8675735739767122,
+      "latency_ms_per_query": 15974.230498290126
+    }
+  ]
+}

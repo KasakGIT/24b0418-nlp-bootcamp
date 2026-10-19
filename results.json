@@ -1,0 +1,57 @@
+{
+  "name": "Kasak Malhotra",
+  "roll_no": "24B0418",
+  "seed": 42,
+  "gpu_used": "Colab T4 GPU for Task 5 NLI fine-tuning and scoring; local CPU for Tasks 1-4",
+  "task1": {
+    "bm25_settings": "rank_bm25; title + abstract; k1=2.0, b=0.3",
+    "val_ndcg10": 0.798
+  },
+  "task2": {
+    "general_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "scientific_model": "allenai-specter",
+    "val_ndcg10_general": 0.8155,
+    "val_ndcg10_scientific": 0.693,
+    "index_time_sec": {
+      "general": 341.41,
+      "scientific": 4068.51
+    },
+    "query_latency_ms": {
+      "general": 8.63,
+      "scientific": 55.17
+    },
+    "memory_mb": {
+      "general": 659.0,
+      "scientific": 1769.81
+    }
+  },
+  "task3": {
+    "hybrid_method": "Reciprocal Rank Fusion (BM25 + all-MiniLM-L6-v2); k=20 in t3_hybrid, k=15 candidate fusion for improved reranking",
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "rerank_top_k": 10,
+    "val_ndcg10_hybrid": 0.8418,
+    "val_ndcg10_rerank": 0.8675735739767122,
+    "rerank_query_latency_ms": 15713.19
+  },
+  "task4": {
+    "base_model": "sentence-transformers/all-MiniLM-L6-v2; TripletLoss; lr=1e-5; 1 epoch; batch=16",
+    "val_ndcg10_random_negatives": 0.8317143948784802,
+    "val_ndcg10_hard_negatives": 0.83271434932859
+  },
+  "task5": {
+    "retriever_used": "Task 3 improved t3_rerank.trec; top-2 abstracts scored per claim",
+    "nli_model": "MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli fine-tuned on train claims (2 epochs, lr 1e-5, batch 16, seed 42) plus BM25-mined NEUTRAL pairs from train claims with no evidence; 1-2 sentence windows",
+    "zero_shot_or_finetuned": "fine-tuned on train claims only; rank-1 margin threshold 0.70, rank-2 abstract added only at margin >= 0.95, both selected on validation triple-F1",
+    "val_f1": 0.691057
+  },
+  "report_q1": {
+    "bm25_wins": [
+      417,
+      645
+    ],
+    "general_wins": [
+      55,
+      537
+    ]
+  }
+}
